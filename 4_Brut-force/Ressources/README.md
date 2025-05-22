@@ -4,14 +4,12 @@
 
 ### Comment la faille a été exploitée:
 
-2. On télécharge une wordlist de mots de passe: RockYou.txt (la plus célèbre)
+2. On télécharge une wordlist de mots de passe: [RockYou.txt](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt) (la plus célèbre)
 
-*"https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt"*
-
-tests avec plusieurs usernames: admin, root.
+Tests avec plusieurs usernames: `admin`, `root`.
 Et on teste d'abord avec les 1000 premiers mots de passe, avec un script python simple.
 
-3. On obtient un resultat avec le username *"root"* pour le password *"shadow*" (cf. img *"resultat_brute_force"*)
+3. On obtient un résultat avec le username `root` pour le password `shadow` (voir [resultat_brute_force](./resultat_brute_force.png))
 
 ### Comment la faille peut être corrigée:
 
