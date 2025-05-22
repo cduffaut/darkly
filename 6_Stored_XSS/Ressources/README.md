@@ -1,16 +1,16 @@
 ### Comment la faille a été trouvée:
 
-1. Page d'accueil, présence du bouton `leave a feedback` (voir [img 1](./img1.png)).
+1. Page d'accueil, présence du bouton `leave a feedback` (voir [img 1](./1.png)).
 
 2. (`http://127.0.0.1:8080/index.php?page=feedback`) On a des champs dans lesquels on peut écrire.
 On va venir tester si le site fait confiance ou non à nos inputs.
 
-3. On teste le fonctionnement de base du formulaire: le commentaire se poste avec le nom que l'on a donné (voir [img 2](./img2.png)). Cette configuration pourrait être une faille potentielle de type Stored XSS (=script malveillant injecté de manière permanente côté serveur). Il s'exécute à chaque fois qu'un utilisateur accède à la ressource infectée.
+3. On teste le fonctionnement de base du formulaire: le commentaire se poste avec le nom que l'on a donné (voir [img 2](./2.png)). Cette configuration pourrait être une faille potentielle de type Stored XSS (=script malveillant injecté de manière permanente côté serveur). Il s'exécute à chaque fois qu'un utilisateur accède à la ressource infectée.
 
 ### Comment la faille a été exploitée:
 
 4. On teste une injection "basique": `<script>alert('test')</script>` en guise de commentaire.
-Le site semble filtrer les caractères spéciaux. (voir [img 3](./img3.png)). : `<script>` et `</script>` sont ignorés.
+Le site semble filtrer les caractères spéciaux. (voir [img 3](./3.png)). : `<script>` et `</script>` sont ignorés.
 
 Mais `alert` est toujours visible donc pas filtré.
 

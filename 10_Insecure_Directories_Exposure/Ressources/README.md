@@ -31,7 +31,7 @@ Disallow: /.hidden
 6. `.hidden` attire notre curiosité.
 
 7. On s'y rend : `http://127.0.0.1:8080//.hidden`
-On tombe sur une liste de liens avec un README (voir [img 1](./img1.png)).
+On tombe sur une liste de liens avec un README (voir [img 1](./1.png)).
 
 8. On se rend compte qu'un lien mène à d'autres liens et ainsi de suite. Un vrai labyrinthe qui serait trop long à faire à la main.
 On cherche une méthode efficace pour nous aider.
@@ -45,7 +45,7 @@ On installe d'abord:
 
 11. Un par un on déclenche le script sur chacune des URLs (afin d'éviter des boucles infinies...) dans `http://127.0.0.1:8080//.hidden`.
 On met une profondeur de 3 (le maximum que l'on a pu observer en terme de profondeur des liens).
-Et on obtient finalement notre flag lors de l'analyse de l'URL: `http://127.0.0.1:8080/.hidden/whtccjokayshttvxycsvykxcfm/` (voir [img 2](./img2.png) & [img 3](./img3.png)).
+Et on obtient finalement notre flag lors de l'analyse de l'URL: `http://127.0.0.1:8080/.hidden/whtccjokayshttvxycsvykxcfm/` (voir [img 2](./2.png) & [img 3](./3.png)).
 
 ### Comment la faille peut être corrigée:
 

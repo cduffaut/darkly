@@ -1,13 +1,13 @@
 ### Comment la faille a été trouvée:
 
-1. Depuis la page d'accueil il y a un bouton qui propose de chercher des images (voir [img 1](./img1.png)).
-Quand on clique dessus on tombe sur un champ de recherche (voir [img 2](./img2.png))
+1. Depuis la page d'accueil il y a un bouton qui propose de chercher des images (voir [img 1](./1.png)).
+Quand on clique dessus on tombe sur un champ de recherche (voir [img 2](./2.png))
 
 2. Si on tente une injection classique de ce type `' OR 1=1 --` : rien ne se passe.
 
 ### Comment la faille a été exploitée:
 
-2. Si dans le champ on tente une tentative d'injection SQL sans caractère d'échappatoire : `1 OR 1=1` (voir [img 3](./img3.png))
+2. Si dans le champ on tente une tentative d'injection SQL sans caractère d'échappatoire : `1 OR 1=1` (voir [img 3](./3.png))
 On obtient une liste d'URLs, avec ID et title associé.
 
 3. Parmi les éléments, l'un d'entre eux attire l'oeil : 

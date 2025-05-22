@@ -3,7 +3,7 @@
 1. Depuis la homepage, lorsque l'on clique sur "© BornToSec" on tombe sur cette page:
 `http://127.0.0.1:8080/index.php?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f`
 
-2. En inspectant le code html de cette page en question on se rend compte si on descend après plein de retour à la ligne on trouve des commentaires laissés le long du code (voir [img 1](./img1.png))
+2. En inspectant le code html de cette page en question on se rend compte si on descend après plein de retour à la ligne on trouve des commentaires laissés le long du code (voir [img 1](./1.png))
 
 3. On trouve ce commentaire d'intéressant : `You must come from : "https://www.nsa.gov/".`
 Et celui ci : `Let's use this browser : "ft_bornToSec". It will help you a lot.`
